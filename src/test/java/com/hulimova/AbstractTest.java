@@ -1,4 +1,4 @@
-package com.hulimova.tests;
+package com.hulimova;
 
 import com.hulimova.util.DriverSingleton;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package com.hulimova.tests;
+package com.hulimova;
 
 import com.hulimova.pages.LoginPage;
 import com.hulimova.pages.ManagerAccountPage;

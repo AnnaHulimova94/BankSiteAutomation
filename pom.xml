@@ -5,20 +5,15 @@
 
   <groupId>com.hulimova</groupId>
   <artifactId>BankSiteAutomation</artifactId>
-
-  <packaging>war</packaging>
-
-  <version>1.0-SNAPSHOT</version>
-
+  <version>1.0</version>
   <name>BankSiteAutomation Maven Webapp</name>
-
-  <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.10.2</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -44,6 +39,26 @@
   </dependencies>
 
   <build>
-    <finalName>BankSiteAutomation</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>17</source>
+          <target>17</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>
+              src\test\resources\testng.xml
+            </suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>

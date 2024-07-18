@@ -1,4 +1,4 @@
-package com.hulimova.tests;
+package com.hulimova;
 
 import com.hulimova.entity.Customer;
 import com.hulimova.pages.CustomerAccountPage;

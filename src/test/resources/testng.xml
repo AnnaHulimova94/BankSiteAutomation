@@ -4,14 +4,14 @@
     <test name="ChromeSmokeTest">
         <parameter name="environment" value="chrome"/>
         <classes>
-<!--            <class name="com.hulimova.tests.AuthorizationTest"/>-->
-            <class name="com.hulimova.tests.ManagerFunctionalityTest"/>
+            <class name="com.hulimova.AuthorizationTest"/>
+            <class name="com.hulimova.ManagerFunctionalityTest"/>
         </classes>
     </test>
 <!--    <test name="FirefoxSmokeTest">-->
 <!--        <parameter name="environment" value="firefox"/>-->
 <!--        <classes>-->
-<!--            <class name="com.hulimova.tests.AuthorizationTest"/>-->
+<!--            <class name="com.hulimova.AuthorizationTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 </suite>
